@@ -1,5 +1,7 @@
-<%= turbo_stream.append "quotes" do %>
-  <%= render @quote %>
-<% end %>
+<%= turbo_stream.append "quotes", partial: "quotes/quote", locals: { quote: @quote } %>
+<%# same as this: <%= turbo_stream.prepend "quotes", @quote %>
+<%# <%= turbo_stream.prepend "quotes" do %>
+  <%# <%= render @quote %>
+<%# <% end %>
 
 <%= turbo_stream.update Quote.new, "" %>
