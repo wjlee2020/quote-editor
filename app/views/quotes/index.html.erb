@@ -1,4 +1,4 @@
-<%= turbo_stream_from "quotes" %>
+<%= turbo_stream_from current_company, "quotes" %>
 
 <main class="container">
   <div class="header">
@@ -7,9 +7,11 @@
     <%= link_to "New quote",
                 new_quote_path,
                 class: "btn btn--primary",
+                # 'new_quote' === dom_id(Quote.new)
                 data: { turbo_frame: 'new_quote' } %>
   </div>
 
+  <%# Quote.new === 'new_quote' %>
   <%= turbo_frame_tag Quote.new %>
 
   <%= turbo_frame_tag 'quotes' do %>

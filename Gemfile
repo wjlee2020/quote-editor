@@ -6,6 +6,8 @@ ruby '3.2.2'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.4', '>= 7.0.4.3'
 
+gem 'devise', '~> 4.8.1'
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 
@@ -33,7 +35,7 @@ gem 'jbuilder'
 gem 'simple_form', '~> 5.1.0'
 
 # Use Redis adapter to run Action Cable in production
-# gem "redis", "~> 4.0"
+gem 'redis', '~> 4.0'
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"

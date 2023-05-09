@@ -5,6 +5,7 @@
     <h1>Edit quote</h1>
   </div>
 
+  <%# frame_tag automatically passes given obj to dom_id. in short: id=quote.id %>
   <%= turbo_frame_tag @quote do %>
     <%= render "form", quote: @quote %>
   <% end %>

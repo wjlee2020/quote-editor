@@ -1,4 +1,5 @@
 <main class="container">
+  <%# similar to index.html, here @quote can be 'new_quote' %>
   <%= turbo_frame_tag @quote do %>
     <%= render "form", quote: @quote %>
   <% end %>
