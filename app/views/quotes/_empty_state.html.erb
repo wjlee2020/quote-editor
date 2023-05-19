@@ -1,0 +1,13 @@
+<div class="empty-state" sytle="padding: var(--space-m);
+  border: var(--border);
+  border-style: dashed;
+  text-align: center;">
+  <p class="empty-state__text" style="font-size: var(--font-size-l);
+    color: var(--color-text-header);
+    margin-bottom: var(--space-l);
+    font-weight: bold; ">
+    You don't have any quotes yet!
+  </p>
+
+  <%= link_to "Add quote", new_quote_path, class: "btn btn--primary" %>
+</div>

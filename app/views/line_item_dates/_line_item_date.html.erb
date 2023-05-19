@@ -1,0 +1,23 @@
+<div class="line-item-date" style="margin-top: var(--space-xl);
+  margin-bottom: var(--space-xxs);">
+  <div class="line-item-date__header" style="display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-xs);">
+    <h2 class="line-item-date__title" style="font-size: var(--font-size-xl);">
+      <%= l(line_item_date.date, format: :long) %>
+    </h2>
+
+    <div class="line-item-date__actions" style="display: flex;
+    gap: var(--space-xs);">
+      <%= button_to "Delete",
+                    # same as: quote_line_item_date_path(quote, line_item_date)
+                    [quote, line_item_date],
+                    method: :delete,
+                    class: "btn btn--light" %>
+      <%= link_to "Edit",
+                  [:edit, quote, line_item_date],
+                  class: "btn btn--light" %>
+    </div>
+  </div>
+</div>

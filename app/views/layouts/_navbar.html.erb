@@ -8,7 +8,7 @@
     <div class="navbar__brand" style="font-weight: bold;
     font-size: var(--font-size-xl);
     color: var(--color-text-header);">
-      <%= current_company.name %>
+      <%= current_company.name unless !current_company %>
     </div>
     <div class="navbar__name" style="font-weight: bold;
     margin-left: auto;
